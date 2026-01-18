@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ExcavaPro for a free quote on excavating services. Call us or fill out our contact form for fast response.">
+    <meta name="keywords" content="contact excavating company, excavation quote, excavating services contact, request quote">
+    <title>Kontaktirajte nas | Lule Kop 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <img src="images/lule-logo.png" alt="Lule kop logo" style="height: 200px;">
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="services.html">Usluge</a></li>
+                    <li><a href="gallery.html">Galerija</a></li>
+                    <li><a href="about.html">O Nama</a></li>
+                    <li><a href="contact.html" class="btn-primary-nav active">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Kontaktirajte nas</h1>
+            <p>Zatražite besplatnu ponudu za vaš projekat</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Kontaktirajte nas</h2>
+                    <p>Spremni da započnete vaš projekat? Kontaktirajte nas danas za besplatnu, bezobaveznu ponudu. Mi smo tu da odgovorimo na vaša pitanja i pomognemo da vaš projekat postane stvarnost.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:5551234567">(555) 123-4567</a></p>
+                                <p class="contact-note">Mon-Fri: 7AM-6PM</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@excavapro.com">info@excavapro.com</a></p>
+                                <p class="contact-note">We respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h3>Location</h3>
+                                <p>123 Main Street<br>Your City, State 12345</p>
+                                <p class="contact-note">Serving the tri-state area</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 7AM - 6PM<br>
+                                Saturday: 8AM - 4PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h2>Zatražite besplatnu ponudu</h2>
+                        
+                        <div class="form-group">
+                            <label for="name">Ime i prezime *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Telefon *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Potrebna usluga *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Izaberite uslugu...</option>
+                                <option value="excavation">Iskopavanje</option>
+                                <option value="grading">Čišćenje i ravnanje</option>
+                                <option value="trenching">Kopanje kanala</option>
+                                <option value="demolition">Rušenje</option>
+                                <option value="residential">Gradjevinski rad</option>
+                                <option value="commercial">Prevoz materijala</option>
+                                <option value="other">Ostalo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="timeline">Željeni rok *</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Izaberite rok...</option>
+                                <option value="asap">Što pre moguće</option>
+                                <option value="1-2weeks">1-2 nedelje</option>
+                                <option value="1month">1 mesec</option>
+                                <option value="flexible">Fleksibilno</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Detalji projekta *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Opisite vaš projekat, lokaciju i sve specifične zahteve..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-large">Pošalji zahtev</button>
+                        
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="service-area">
+        <div class="container">
+            <h2>Područje rada</h2>
+            <p>Radimo u sledećim područjima:</p>
+            <div class="areas-grid">
+                <div class="area-item">📍 Beograd</div>
+                <div class="area-item">📍 Barajevo</div>
+                <div class="area-item">📍 Sopot</div>
+                <div class="area-item">📍 Lazarevac</div>
+            </div>
+            <p class="area-note">Ako vaša lokacija nije navedena, kontaktirajte nas - možda ćemo vam pomoći!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/lule-logo.png" alt="Lule kop logo" style="height: 120px;">
+                
+                    <h3>Lule Kop 2</h3>
+                    <p>Profesionalne usluge iskopavanja od poverenja</p>
+                </div>
+                <div class="footer-section" style="text-align: center;">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@excavapro.com</li>
+                        <li>📍 Your City, State</li>
+                    </ul>
+                </div>
+                <div class="footer-section" style="text-align: center;">
+                    <h4>Radno vreme</h4>
+                    <ul>
+                        <li>Svakog dana</li>
+                        <li>09 h - 17 h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lule Kop 2. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
