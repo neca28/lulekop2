@@ -374,13 +374,16 @@ function debounce(func, wait) {
 // Carousel Gallery
 // ================================
 class Carousel {
-    constructor(container) {
+    constructor(container, options = {}) {
         this.container = container;
         this.track = container.querySelector('.carousel-track');
         this.items = Array.from(this.track.querySelectorAll('.carousel-item'));
         this.prevBtn = container.querySelector('.carousel-btn.prev');
         this.nextBtn = container.querySelector('.carousel-btn.next');
         this.dotsContainer = container.querySelector('.carousel-dots');
+        
+        // Store custom options
+        this.options = options;
         
         this.currentIndex = 0;
         this.itemsPerView = this.getItemsPerView();
@@ -416,6 +419,12 @@ class Carousel {
     }
     
     getItemsPerView() {
+        // If custom itemsPerView is provided in options, use it
+        if (this.options.itemsPerView) {
+            return this.options.itemsPerView;
+        }
+        
+        // Otherwise, use responsive default
         const width = window.innerWidth;
         if (width <= 540) return 1;
         if (width <= 768) return 1;
@@ -592,11 +601,21 @@ class Carousel {
 
 // Initialize all carousels on the page
 document.addEventListener('DOMContentLoaded', function() {
-    const carouselContainers = document.querySelectorAll('.gallery-category, .equipment-carousel');
+    const carouselContainers = document.querySelectorAll('.gallery-category');
     
     carouselContainers.forEach(container => {
         new Carousel(container);
     });
+
+    const equipmentCarousel = document.querySelectorAll('.equipment-carousel'); 
+        
+    equipmentCarousel.forEach(carousel => {
+        new Carousel(carousel,{
+            itemsPerView: 1
+        });
+    });
+    
+
 });
 
 console.log('ExcavaPro website loaded successfully!');

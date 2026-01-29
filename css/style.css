@@ -1698,48 +1698,51 @@ ul {
 }
 
 /* ================================
-   Equipment Carousel (Mobile Only)
+   Equipment Carousel (All Devices)
    ================================ */
 .desktop-only {
-    display: flex;
-}
-
-.mobile-only {
     display: none;
 }
 
+.mobile-only {
+    display: block;
+}
+
+/* Equipment carousel styling for all screen sizes */
+.equipment-carousel .carousel-item {
+    min-width: 100%;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px;
+    padding: 20px;
+}
+
+.equipment-carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: none !important;
+}
+
+.equipment-carousel .carousel-item img:hover {
+    box-shadow: none !important;
+    transform: none;
+}
+
 @media (max-width: 768px) {
-    .desktop-only {
-        display: none;
-    }
-    
-    .mobile-only {
-        display: block;
-    }
-    
-    /* Fix carousel sliding by forcing consistent item widths */
+    /* Adjust carousel for smaller screens */
     .equipment-carousel .carousel-item {
-        min-width: 100%;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 280px;
+        min-height: 250px;
         padding: 10px;
     }
     
     .equipment-carousel .carousel-item img {
-        width: 100%;
         max-width: 100%;
         max-height: 350px;
-        height: auto;
-        object-fit: contain;
-        border-radius: 10px;
-        box-shadow: none !important;
-    }
-    
-    .equipment-carousel .carousel-item img:hover {
-        box-shadow: none !important;
-        transform: none;
     }
 }
