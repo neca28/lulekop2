@@ -3,6 +3,7 @@
 // ================================
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const navBar = document.querySelector('.navbar');
     const navMenu = document.getElementById('navMenu');
 
     if (mobileMenuToggle && navMenu) {
@@ -591,7 +592,7 @@ class Carousel {
 
 // Initialize all carousels on the page
 document.addEventListener('DOMContentLoaded', function() {
-    const carouselContainers = document.querySelectorAll('.gallery-category');
+    const carouselContainers = document.querySelectorAll('.gallery-category, .equipment-carousel');
     
     carouselContainers.forEach(container => {
         new Carousel(container);
