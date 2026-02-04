@@ -1,0 +1,10 @@
+# robots.txt for Lule Kop 2
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://neca28.github.io/lulekop2/sitemap.xml
+
+# Disallow access to specific files/folders if needed
+# Disallow: /css/
+# Disallow: /js/
