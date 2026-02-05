@@ -335,6 +335,24 @@ ul {
 }
 
 /* ================================
+   Home About Section
+   ================================ */
+.home-about {
+    padding: 4rem 0;
+    background-color: var(--bg-secondary);
+}
+.home-about .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-card);
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+/* ================================
    Section Headers
    ================================ */
 .section-header {
@@ -493,7 +511,25 @@ ul {
     align-items: end;
     height: 400px;
 }
-
+.page-header-services {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--dark-color) 100%);
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+    align-items: end;
+    height: 500px;
+}
+.page-header-services .container {
+    margin-top: 140px;
+}
+.page-header-services h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.page-header-services p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
 .page-header .container {
     margin-top: 140px;
 }
